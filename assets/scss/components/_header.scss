@@ -1,0 +1,21 @@
+@use '../abstract' as a;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+
+  @include a.breakpoint(medium) {
+    padding: 3rem 6rem;
+  }
+
+  &__logo {
+    width: 8.5rem;
+
+    @include a.breakpoint(medium) {
+      width: 15rem;
+    }
+  }
+}

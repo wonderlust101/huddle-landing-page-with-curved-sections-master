@@ -4,44 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="description" content="description"> -->
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <script src="https://kit.fontawesome.com/f2b4deb65b.js" crossorigin="anonymous"></script>
+
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="assets/css/main.css"/>
-
-    <!--Remove later-->
-    <style>
-        @font-face {
-            font-family: 'VT323';
-            src: url('assets/fonts/DotGothic16-Regular.ttf');
-        }
-
-        * {
-            font-family: 'VT323', sans-serif;
-            font-size: 120px;
-        }
-    </style>
-    <!--Remove later-->
 </head>
-<body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+<body class="landing-page">
+    <header class="header">
+        <img class="header__logo" src="./assets/images/logo.svg" alt="Huddle Logo">
+        <a class="button button--transparent button--small" href="/">Try it free</a>
+    </header>
 
+    <main class="landing-page__content">
+        <section class="hero">
+            <div class="hero__text">
+                <div class="hero__text-container">
+                    <h1>Build The Community Your Fans Will Love</h1>
+
+                    <p class="hero__body">Huddle re-imagines the way we build communities. You have a voice, but so does
+                        your audience. Create connections with your users as you engage in genuine discussion.</p>
+                </div>
+
+                <a class="button button--pink button--large" href="/">Get Started For Free</a>
+            </div>
+
+            <img src="./assets/images/screen-mockups.svg" alt="" role="presentation">
+
+            <div class="hero__stats">
+                <section>
+                    <img class="hero__stat-icon" src="./assets/images/icon-communities.svg" alt="" role="presentation">
+                    <h2 class="hero__stat-header">1.4k+</h2>
+                    <p class="hero__stat-text">Communities Formed</p>
+                </section>
+                <section>
+                    <img class="hero__stat-icon" src="./assets/images/icon-messages.svg" alt="" role="presentation">
+                    <h2 class="hero__stat-header">2.7m+</h2>
+                    <p class="hero__stat-text">Messages Sent</p>
+                </section>
+            </div>
+        </section>
+
+        <div class="landing-page__section-grid">
+            <div>
+                <img class="landing-page__section-divider" src="./assets/images/bg-section-top-mobile-1.svg" alt="">
+                <section class="landing-page__section">
+                    <img class="landing-page__section-image" src="./assets/images/illustration-grow-together.svg" alt="" role="presentation">
+
+                    <div class="landing-page__section-text">
+                        <h2>Grow Together</h2>
+                        <p class="landing-page__section-body">Generate meaningful discussions with your audience and build a strong, loyal community.
+                            Think of the insightful conversations you miss out on with a feedback form.</p>
+                    </div>
+                </section>
+                <img class="landing-page__section-divider" src="./assets/images/bg-section-bottom-mobile-1.svg" alt="">
+            </div>
+
+
+            <section class="landing-page__section">
+                <img class="landing-page__section-image" src="./assets/images/illustration-flowing-conversation.svg" alt="" role="presentation">
+
+                <div class="landing-page__section-text">
+                    <h2>Flowing Conversations</h2>
+                    <p class="landing-page__section-body">You wouldn't paginate a conversation in real life, so why do it online? Our threads
+                        have just-in-time loading for a more natural flow.</p>
+                </div>
+            </section>
+
+
+            <div>
+                <img class="landing-page__section-divider" src="./assets/images/bg-section-top-mobile-2.svg" alt="">
+                <section class="landing-page__section">
+                    <img class="landing-page__section-image" src="./assets/images/illustration-your-users.svg" alt="" role="presentation">
+
+                    <div class="landing-page__section-text">
+                        <h2>Your Users</h2>
+                        <p class="landing-page__section-body">It takes no time at all to integrate Huddle with your app's authentication solution.
+                            This means, once signed in to your app, your users can start chatting immediately.</p>
+                    </div>
+                </section>
+                <img class="landing-page__section-divider" src="./assets/images/bg-section-bottom-mobile-2.svg" alt="">
+            </div>
+
+        </div>
+
+
+        <section class="landing-page__cta">
+            <h2 class="landing-page__cta-header">Ready To Build Your Community?</h2>
+
+            <a class="button button--pink button--large">Get Started For Free</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__divider" src="./assets/images/bg-footer-top-mobile.svg" alt="">
+
+        <div class="footer__content">
+            <form id="footer__newsletter-form" class="footer__newsletter-container" novalidate>
+                <div class="footer__newsletter-text">
+                    <h3>Newsletter</h3>
+
+                    <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your
+                        email address</p>
+                </div>
+
+                <fieldset class="footer__newsletter">
+                    <div class="text-input">
+                        <label class="sr-only" for="footer-newsletter">Email Address</label>
+                        <input class="text-input__field" id="footer-newsletter" type="email" placeholder="Enter your email…" spellcheck="false"
+                               autocomplete="email"
+                               aria-required="true" required>
+                        <p class="text-input__status">Check your email please</p>
+                    </div>
+
+                    <button class="button button--pink button--large" type="submit">Subscribe</button>
+                </fieldset>
+            </form>
+
+            <section class="footer__contact-details">
+                <img class="footer__logo" src="./assets/images/logo.svg" alt="Huddle Logo">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+                    vestibulum a, ultrices quis sem.</p>
+
+                <div class="footer__contact-details-flex">
+                    <div>
+                        <img src="./assets/images/icon-phone.svg" alt="" role="presentation">
+                        <p>Phone: +1-543-123-4567</p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icon-email.svg" alt="" role="presentation">
+                        <p>example@huddle.com</p>
+                    </div>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="/" aria-label="Go to Huddle Facebook Page">
+                        <i class="fa-2xl fa-fw fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="/" aria-label="Go to Huddle Instagram Page">
+                        <i class="fa-2xl fa-fw fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="/" aria-label="Go to Huddle Twitter Page">
+                        <i class="fa-2xl fa-fw fa-brands fa-square-twitter"></i>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </footer>
     <script src="assets/scripts/index.js"></script>
 </body>
 </html>

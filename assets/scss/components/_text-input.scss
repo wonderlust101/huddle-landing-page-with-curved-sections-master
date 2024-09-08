@@ -1,0 +1,31 @@
+@use '../abstract' as a;
+
+.text-input {
+  display: grid;
+  gap: 0.5rem;
+  position: relative;
+  
+  &__field {
+    width: 100%;
+    padding: 1rem 1.75rem;
+    font-weight: 500;
+    color: var(--clr-neutral-color-very-dark-cyan);
+    border-radius: 0.3rem;
+    outline: none !important;
+
+    &:focus {
+      border: 2px solid var(--clr-primary-color-pink);
+    }
+
+    &--error,
+    &--error:focus {
+      border: 2px solid var(--clr-primary-color-red);
+    }
+  }
+
+  &__status {
+    display: none;
+    text-align: left;
+    color: var(--clr-primary-color-red);
+  }
+}

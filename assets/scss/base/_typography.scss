@@ -1,6 +1,44 @@
 @use '../abstract' as a;
 
-h1, h2, h3, h4,
-h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
 
+h1 {
+  font-size: 1.5rem;
+  
+  @include a.breakpoint(medium){
+    font-size: 3rem;
+  }
+}
+
+p,
+a,
+input,
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  @include a.breakpoint(medium) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+
+  @include a.breakpoint(medium) {
+    font-size: 1rem;
+  }
 }

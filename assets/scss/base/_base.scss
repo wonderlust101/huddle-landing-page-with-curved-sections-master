@@ -3,3 +3,7 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+fieldset {
+  border: none;
+}

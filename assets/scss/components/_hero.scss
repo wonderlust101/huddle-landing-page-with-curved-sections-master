@@ -1,0 +1,81 @@
+@use '../abstract' as a;
+
+.hero {
+  display: grid;
+  justify-items: center;
+  gap: 5rem;
+  width: 100%;
+  padding: 2.5rem;
+
+  @include a.breakpoint(medium) {
+    padding-top: 10rem;
+  }
+
+  &__text {
+    display: grid;
+    justify-items: center;
+    gap: 1.5rem;
+    text-align: center;
+
+    & > :last-child {
+      margin-top: 0.5rem;
+      width: 80%;
+
+      @include a.breakpoint(medium) {
+        width: max-content;
+      }
+    }
+  }
+
+  &__text-container {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  &__body {
+    max-width: 50rem;
+
+    @include a.breakpoint(medium) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__stats {
+    display: grid;
+    justify-items: center;
+    gap: 5.5rem;
+    
+    @include a.breakpoint(medium) {
+      width: 80%;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__stat-icon {
+    width: 2.25rem;
+    
+    @include a.breakpoint(medium) {
+      width: 3rem;
+    }
+  }
+
+  &__stat-header {
+    font-size: 3.75rem;
+    line-height: 1.5;
+
+    @include a.breakpoint(medium) {
+      font-size: 6rem;
+    }
+  }
+
+  &__stat-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+
+    @include a.breakpoint(medium) {
+      font-size: 1.5rem;
+    }
+  }
+}
