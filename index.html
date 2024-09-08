@@ -49,7 +49,12 @@
 
         <div class="landing-page__section-grid">
             <div>
-                <img class="landing-page__section-divider" src="./assets/images/bg-section-top-mobile-1.svg" alt="">
+                <picture aria-hidden="true">
+                    <source class="landing-page__section-divider" srcset="./assets/images/bg-section-top-desktop-1.svg"
+                            media="(min-width: 64rem)">
+                    <img class="landing-page__section-divider" src="./assets/images/bg-section-top-mobile-1.svg" alt="">
+                </picture>
+
                 <section class="landing-page__section">
                     <img class="landing-page__section-image" src="./assets/images/illustration-grow-together.svg" alt="" role="presentation">
 
@@ -59,9 +64,13 @@
                             Think of the insightful conversations you miss out on with a feedback form.</p>
                     </div>
                 </section>
-                <img class="landing-page__section-divider" src="./assets/images/bg-section-bottom-mobile-1.svg" alt="">
-            </div>
 
+                <picture aria-hidden="true">
+                    <source class="landing-page__section-divider" srcset="./assets/images/bg-section-bottom-desktop-1.svg"
+                            media="(min-width: 64rem)">
+                    <img class="landing-page__section-divider" src="./assets/images/bg-section-bottom-mobile-1.svg" alt="">
+                </picture>
+            </div>
 
             <section class="landing-page__section">
                 <img class="landing-page__section-image" src="./assets/images/illustration-flowing-conversation.svg" alt="" role="presentation">
@@ -73,9 +82,13 @@
                 </div>
             </section>
 
-
             <div>
-                <img class="landing-page__section-divider" src="./assets/images/bg-section-top-mobile-2.svg" alt="">
+                <picture aria-hidden="true">
+                    <source class="landing-page__section-divider" srcset="./assets/images/bg-section-top-desktop-2.svg"
+                            media="(min-width: 64rem)">
+                    <img class="landing-page__section-divider" src="./assets/images/bg-section-top-mobile-2.svg" alt="">
+                </picture>
+
                 <section class="landing-page__section">
                     <img class="landing-page__section-image" src="./assets/images/illustration-your-users.svg" alt="" role="presentation">
 
@@ -85,7 +98,11 @@
                             This means, once signed in to your app, your users can start chatting immediately.</p>
                     </div>
                 </section>
-                <img class="landing-page__section-divider" src="./assets/images/bg-section-bottom-mobile-2.svg" alt="">
+
+                <picture aria-hidden="true">
+                    <source class="landing-page__section-divider" srcset="./assets/images/bg-section-bottom-desktop-2.svg" media="(min-width: 64rem)">
+                    <img class="landing-page__section-divider" src="./assets/images/bg-section-bottom-mobile-2.svg" alt="">
+                </picture>
             </div>
 
         </div>
@@ -99,7 +116,10 @@
     </main>
 
     <footer class="footer">
-        <img class="footer__divider" src="./assets/images/bg-footer-top-mobile.svg" alt="">
+        <picture aria-hidden="true">
+            <source class="footer__divider" srcset="./assets/images/bg-footer-top-desktop.svg" media="(min-width: 64rem)">
+            <img class="footer__divider" src="./assets/images/bg-footer-top-mobile.svg" alt="">
+        </picture>
 
         <div class="footer__content">
             <form id="footer__newsletter-form" class="footer__newsletter-container" novalidate>
@@ -123,7 +143,7 @@
                 </fieldset>
             </form>
 
-            <section class="footer__contact-details">
+            <div class="footer__contact-details">
                 <img class="footer__logo" src="./assets/images/logo.svg" alt="Huddle Logo">
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
@@ -151,7 +171,7 @@
                         <i class="fa-2xl fa-fw fa-brands fa-square-twitter"></i>
                     </a>
                 </div>
-            </section>
+            </div>
 
         </div>
     </footer>
